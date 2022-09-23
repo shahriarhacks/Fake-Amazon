@@ -12,9 +12,11 @@ const Products = () => {
     return (
         <div>
             <h1>The Number of Products in our store {products.length}</h1>
-            {
-                products.map(product => <Product product={product} key={product.id}></Product>)
-            }
+            <div className='allProduct'>
+                {
+                    products.map(product => <Product product={product} key={product.id}></Product>)
+                }
+            </div>
         </div>
     );
 };

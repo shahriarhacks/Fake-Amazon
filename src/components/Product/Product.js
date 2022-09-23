@@ -1,4 +1,5 @@
 import React from 'react';
+import './Product.css'
 
 const Product = (props) => {
     const { title, price, description, category, image, rating } = props.product;
@@ -7,15 +8,19 @@ const Product = (props) => {
         <div className='product'>
             <img src={image} alt="" />
             <div className='productCategory'>
-                <h4>{category}</h4>
-                <h4>{price}</h4>
+                <h4>Category: {category}</h4>
+                <h4>Price: ৳<span>{price}</span></h4>
             </div>
             <h3>{title}</h3>
             <div className='rating'>
-                <p><small>{rating.rate}</small></p>
-                <p><small>{rating.count}</small></p>
+                <p><small>Rating: {rating.rate}</small></p>
+                <p><small>Rate Count: {rating.count}</small></p>
             </div>
             <p>{description}</p>
+            <div className='buy-dis'>
+                <a href='./'><button>Buy Now</button></a>
+                <a href='./'><button>Details</button></a>
+            </div>
         </div>
     );
 };
