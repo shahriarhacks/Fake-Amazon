@@ -1,4 +1,17 @@
 .main-container {
     display: grid;
     grid-template-columns: 4fr 1fr;
+    margin: 0 25px;
+}
+
+.product-container {
+    margin: 40px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.order-summery {
+    position: sticky;
+    background-color: #FFE0B3;
 }
