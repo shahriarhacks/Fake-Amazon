@@ -3,7 +3,8 @@ import './Product.css'
 import brokenImg from '../../images/broken-img.png'
 
 const Product = (props) => {
-    const { name, price, seller, img, ratings } = props.product;
+    const { handelAddCart, product } = props;
+    const { name, price, seller, img, ratings } = product;
     return (
         <div className='product'>
             <div className='img-padding'>
@@ -15,7 +16,7 @@ const Product = (props) => {
                 <p><small>Price: ${price}</small></p>
                 <p><small>Rating: {ratings}star</small></p>
             </div>
-            <button className="btn-addToCart">Add to Cart</button>
+            <button onClick={() => handelAddCart(product)} className="btn-addToCart">Add to Cart</button>
         </div>
     );
 };
