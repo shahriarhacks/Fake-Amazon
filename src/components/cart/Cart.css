@@ -3,3 +3,14 @@
     top: 0;
     padding: 0 30px;
 }
+.clear-cart-btn{
+    padding: 5px 8px;
+    border: none;
+    background-color:orange ;
+    border-radius: 3px;
+}
+.clear-cart-btn:hover{
+    cursor: pointer;
+    background-color:orangered;
+    font-weight: 500;
+}
