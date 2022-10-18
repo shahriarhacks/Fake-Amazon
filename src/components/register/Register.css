@@ -1,0 +1,16 @@
+.form-container-register {
+    width: 500px;
+    height: 700px;
+    background-color: #fff;
+    border: 1px solid gray;
+    border-radius: 8px;
+    margin: 20px auto;
+    padding-left: 75px;
+}
+.form-container-register input {
+    width: 415px;
+    height: 45px;
+    border: 1px solid rgb(112, 112, 112);
+    border-radius: 5px;
+    font-size: 1.5em;
+}

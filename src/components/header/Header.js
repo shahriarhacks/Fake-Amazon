@@ -18,6 +18,10 @@ const Header = () => {
                     isActive ? "activeClassName" : undefined} to="/inventory">Inventory</NavLink>
                 <NavLink className={({ isActive }) =>
                     isActive ? "activeClassName" : undefined} to="/about">About</NavLink>
+                <NavLink className={({ isActive }) =>
+                    isActive ? "activeClassName" : undefined} to="/login">Login</NavLink>
+                <NavLink className={({ isActive }) =>
+                    isActive ? "activeClassName" : undefined} to="/register">Register</NavLink>
             </div>
         </nav>
     );

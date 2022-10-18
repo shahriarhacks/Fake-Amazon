@@ -1,0 +1,62 @@
+.form-container-login {
+    width: 500px;
+    height: 600px;
+    background-color: #fff;
+    border: 1px solid gray;
+    border-radius: 8px;
+    margin: 20px auto;
+    padding-left: 75px;
+}
+
+.form-title {
+    text-align: center;
+    color: #2A414F;
+    margin-bottom: 20px;
+}
+
+.form-control {
+    margin-bottom: 20px;
+}
+
+.form-control label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-container-login input {
+    width: 415px;
+    height: 45px;
+    border: 1px solid rgb(112, 112, 112);
+    border-radius: 5px;
+    font-size: 1.5em;
+}
+
+.btn-submit {
+    width: 500px;
+    height: 45px;
+    background: rgba(255, 153, 0, 0.3);
+    border-radius: 5px;
+    padding-left: 10px;
+    border: none;
+    margin-top: 40px;
+}
+
+.btn-submit:hover {
+    background: rgba(255, 153, 0, 0.6);
+}
+
+.othoba {
+    text-align: center;
+    border-left: 1px solid black 45%;
+}
+
+.btn-google {
+    width: 415px;
+    height: 55px;
+    border: 1px solid #95A0A7;
+    border-radius: 5px;
+    font-size: 17px;
+}
+.error{
+    color: rgb(197, 49, 49);
+}
