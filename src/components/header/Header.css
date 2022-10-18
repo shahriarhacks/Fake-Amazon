@@ -19,3 +19,17 @@
     border: 1px solid rgba(255, 203, 173, 0.459);
     padding:  3px 5px;
 }
+.btn-logout{
+    border: none;
+    margin: 0 32px;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+.btn-logout:hover{
+    color: orange;
+}
+.text-white{
+    color: #fff;
+}

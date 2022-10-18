@@ -56,7 +56,9 @@
     border: 1px solid #95A0A7;
     border-radius: 5px;
     font-size: 17px;
+    cursor: pointer;
 }
 .error{
     color: rgb(197, 49, 49);
+    text-align: center;
 }

@@ -8,6 +8,7 @@ import Register from './components/register/Register';
 import Shop from './components/shop/Shop';
 import Main from './layout/Main'
 import { productAndCartLoader } from './loaders/productAndCart';
+import PrivetRoute from './routes/PrivetRoute/PrivetRoute';
 
 function App() {
   const router = createBrowserRouter([
@@ -25,7 +26,7 @@ function App() {
           element: <Orders />
         },
         {
-          path: '/inventory', element: <Inventory />
+          path: '/inventory', element: <PrivetRoute><Inventory /></PrivetRoute>
         },
         {
           path: '/about', element: <About />
