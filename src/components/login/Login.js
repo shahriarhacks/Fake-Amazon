@@ -9,16 +9,16 @@ import { useState } from 'react';
 import { getAuth, GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
 import app from '../../firebase/firebase.config';
 
-const auth=getAuth(app)
+const auth = getAuth(app)
 
 const Login = () => {
-    const[error,setError]=useState('')
+    const [error, setError] = useState('')
 
-    const {  loginUser } = useContext(AuthContext)
+    const { loginUser } = useContext(AuthContext)
 
-    const navigate=useNavigate()
-    const location=useLocation()
-    const from=location.state?.from?.pathname || '/'
+    const navigate = useNavigate()
+    const location = useLocation()
+    const from = location.state?.from?.pathname || '/'
 
     const handelLogin = (event) => {
         event.preventDefault();
@@ -29,10 +29,10 @@ const Login = () => {
             .then(result => {
                 const user = result.user;
                 console.log(user);
-                navigate(from,{replace:true})
+                navigate(from, { replace: true })
             })
             .catch(error => {
-                const errorMessage= error.message;
+                const errorMessage = error.message;
                 setError(errorMessage)
             })
         form.reset();
@@ -40,17 +40,17 @@ const Login = () => {
 
     const googleProvider = new GoogleAuthProvider()
     const googleLogin = () => {
-        signInWithPopup(auth,googleProvider)
-        .then(result=>{
-            const user=result.user
-            console.log(user);
-            navigate(from,{replace:true})
-        })
-        .catch(error=>{
-            const errorMessage= error.message;
+        signInWithPopup(auth, googleProvider)
+            .then(result => {
+                const user = result.user
+                console.log(user);
+                navigate(from, { replace: true })
+            })
+            .catch(error => {
+                const errorMessage = error.message;
                 setError(errorMessage)
-        })
-        
+            })
+
     }
 
     return (

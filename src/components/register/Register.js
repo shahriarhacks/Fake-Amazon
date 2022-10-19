@@ -25,7 +25,7 @@ const Register = () => {
             setError('Password Should have 6 characters ')
             return;
         }
-        if (/(?=.*[!#$%&? "])/.test(password)) {
+        if (!/(?=.*[!#$%&?@*'^~"])/.test(password)) {
             setError('Password must need a Special character')
             return;
         }
@@ -35,6 +35,7 @@ const Register = () => {
         }
         createUser(email, password)
             .then(result => {
+                setError('')
                 const user = result.user;
                 console.log(user);
             })
